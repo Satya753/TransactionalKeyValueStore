@@ -18,7 +18,6 @@ public class Client {
             Operation operation = null;
             if (op.length==3) {
                 operation = new Operation(op[0], op[1], op[2]);
-                System.out.println(op[0] + " " + op[1]  + " " + op[2]);
             }
             else if (op.length==2)
                 operation = new Operation(op[0] , op[1]);

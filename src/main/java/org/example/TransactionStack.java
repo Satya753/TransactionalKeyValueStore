@@ -27,7 +27,7 @@ public class TransactionStack implements  Transaction {
     }
 
     public void commitTransaction(String tid){
-        transactionMap.get(tid).executeTransaction();
+        transactionMap.get(transactionStack.peek()).executeTransaction();
         transactionStack.pop();
     }
     public void addOperation(String tid , Operation op){

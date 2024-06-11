@@ -17,7 +17,6 @@ public class KeyValueStore {
     }
     public void set(String id , String value){
         this.keyValue.put(id , value);
-        System.out.println(keyValue.hashCode());
     }
     public void remove(String id){
         this.keyValue.remove(id);
